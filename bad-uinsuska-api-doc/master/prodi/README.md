@@ -36,7 +36,7 @@ Request :
 ## List Prodi
 Request :
 - Method : GET
-- Endpoint : `/api/ruangan`
+- Endpoint : `/api/prodi`
 - Header :
     - Accept: application/json
 - Query Param : 
