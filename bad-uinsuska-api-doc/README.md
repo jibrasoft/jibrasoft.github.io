@@ -7,9 +7,10 @@ Spesifikasi API Sistem Informasi Beban Akademik Dosen Terintegrasi UIN SUSKA RIA
  - Data Master
     - [Homebase](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/homebase)
     - [SKS Jabatan](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/jabatan)
+    - [Semester](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/semester)
     - [Dosen](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/dosen)
     - [Dosen LB](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/dosen/lb)
-    - [Matakuliah](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/master/matakuliah)
+    - [Matakuliah](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/matakuliah)
  - Pemaketan
  - Penjadwalan
 
