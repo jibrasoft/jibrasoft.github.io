@@ -29,7 +29,7 @@ Request :
 }
 ```
 
-## List Matakuliah
+## List Semester
 Request :
 - Method : GET
 - Endpoint : `/api/semester`
