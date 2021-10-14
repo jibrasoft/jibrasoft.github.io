@@ -1,15 +1,15 @@
 # Sistem Informasi Beban Akademik Dosen Terintegrasi API Spec v1.0.0 
 
 ## Description
-Dosen API Spec
+Fakultas API Spec
 
 ## Authentication
 No authentication needed to use this API
 
-## Get Dosen
+## Get Fakultas
 Request :
 - Method : GET
-- Endpoint : `/api/dosen/{nip}`
+- Endpoint : `/api/fakultas/{id}`
 - Header :
     - Accept: application/json
 - Response :
@@ -20,31 +20,20 @@ Request :
     "status" : "string",
     "message" : "string",
     "data" : {
-         "idh" : "string",
-         "nip" : "string",
-         "nma" : "string",
-         "email" : "string",
-         "homebase": {
-             "nma": "string",
-             "tgl_update": "datetime",
-             "idh": "string",
-             "l": "integer",
-             "p": "integer",
-             "jlh": "integer"
-         }
+         "id" : "string",
+         "nama_fakultas" : "string",
+         "akreditasi" : "string"
     }
 }
 ```
 
-## List Dosen
+## List Fakultas
 Request :
 - Method : GET
-- Endpoint : `/api/dosen`
+- Endpoint : `/api/fakultas`
 - Header :
     - Accept: application/json
-- Query Param :
-    - idh : string
-Response :
+- Response :
 
 ```json 
 {
@@ -53,32 +42,14 @@ Response :
     "message" : "string",
     "data" : [
         {
-            "idh" : "string",
-            "nip" : "string",
-            "nma" : "string",
-            "email" : "string",
-            "homebase": {
-                "nma": "string",
-                "tgl_update": "datetime",
-                "idh": "string",
-                "l": "integer",
-                "p": "integer",
-                "jlh": "integer"
-            }
+            "id" : "string",
+            "nama_fakultas" : "string",
+            "akreditasi" : "string"
         },
         {
-            "idh" : "string",
-            "nip" : "string",
-            "nma" : "string",
-            "email" : "string",
-            "homebase": {
-                "nma": "string",
-                "tgl_update": "datetime",
-                "idh": "string",
-                "l": "integer",
-                "p": "integer",
-                "jlh": "integer"
-            }
+            "id" : "string",
+            "nama_fakultas" : "string",
+            "akreditasi" : "string"
         }
     ]
 }
