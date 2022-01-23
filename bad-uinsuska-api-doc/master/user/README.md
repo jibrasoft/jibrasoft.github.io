@@ -9,7 +9,7 @@ No authentication needed to use this API
 ## Get User
 Request :
 - Method : GET
-- Endpoint : `/api/user/username`
+- Endpoint : `/api/user/{username}`
 - Header :
     - Accept: application/json
 - Response :
