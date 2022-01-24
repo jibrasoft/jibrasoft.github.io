@@ -74,3 +74,30 @@ Request :
     ]
 }
 ```
+
+## Get Authenticated User Prodi
+Request :
+- Method : GET
+- Endpoint : `/api/user/{username}/prodi`
+- Header :
+    - Accept: application/json
+- Response :
+
+```json 
+{
+    "code" : "integer",
+    "status" : "string",
+    "message" : "string",
+    "data" : {
+         "id" : "string",
+         "idf" : "string",
+         "nama_prodi" : "string",
+         "akreditasi" : "string",
+         "fakultas" : {
+             "id" : "string",
+             "nama_fakultas" : "string",
+             "akreditasi" : "string"
+         }
+    }
+}
+```
