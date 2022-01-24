@@ -81,7 +81,8 @@ Request :
     "data" : {
           "username" : "string",
           "level" : "string",
-          "flag" : "integer|default:1"
+          "flag" : "integer|default:1",
+          "api_key" : "string"
     }
 }
 ```
