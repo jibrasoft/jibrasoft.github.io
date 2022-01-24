@@ -54,3 +54,24 @@ Request :
     ]
 }
 ```
+
+## Get Authenticated User Fakultas
+Request :
+- Method : GET
+- Endpoint : `/api/user/{username}/fakultas`
+- Header :
+    - Accept: application/json
+- Response :
+
+```json 
+{
+    "code" : "integer",
+    "status" : "string",
+    "message" : "string",
+    "data" : {
+         "id" : "string",
+         "nama_fakultas" : "string",
+         "akreditasi" : "string"
+    }
+}
+```
