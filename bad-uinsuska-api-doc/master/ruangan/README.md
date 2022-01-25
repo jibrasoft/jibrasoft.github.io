@@ -88,16 +88,29 @@ Request :
     "code" : "integer",
     "status" : "string",
     "message" : "string",
-    "data" : {
-         "id" : "string",
-         "idf" : "string",
-         "kode_ruangan" : "string",
-         "keterangan" : "string",
-         "fakultas" : {
+    "data" : [
+         {
+              "id" : "string",
+              "idf" : "string",
+              "kode_ruangan" : "string",
+              "keterangan" : "string",
+              "fakultas" : {
+                  "id" : "string",
+                  "nama_fakultas" : "string",
+                  "akreditasi" : "string"
+              }
+         },
+         {
              "id" : "string",
-             "nama_fakultas" : "string",
-             "akreditasi" : "string"
+             "idf" : "string",
+             "kode_ruangan" : "string",
+             "keterangan" : "string",
+             "fakultas" : {
+                 "id" : "string",
+                 "nama_fakultas" : "string",
+                 "akreditasi" : "string"
+             }
          }
-    }
+    ]
 }
 ```
