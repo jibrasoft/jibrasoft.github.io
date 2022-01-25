@@ -74,3 +74,30 @@ Request :
     ]
 }
 ```
+
+## Get Authenticated User Ruangan
+Request :
+- Method : GET
+- Endpoint : `/api/user/{username}/ruangan`
+- Header :
+    - Accept: application/json
+- Response :
+
+```json 
+{
+    "code" : "integer",
+    "status" : "string",
+    "message" : "string",
+    "data" : {
+         "id" : "string",
+         "idf" : "string",
+         "kode_ruangan" : "string",
+         "keterangan" : "string",
+         "fakultas" : {
+             "id" : "string",
+             "nama_fakultas" : "string",
+             "akreditasi" : "string"
+         }
+    }
+}
+```
