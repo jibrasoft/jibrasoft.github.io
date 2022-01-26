@@ -20,20 +20,22 @@ Request :
     "status" : "string",
     "message" : "string",
     "data" : {
-         "id" : "string,unique",
+         "id" : "integer",
          "idh" : "string",
          "kode" : "string,unique",
          "nama" : "string",
          "sks" : "integer",
          "semester" : "string",
-         "kurikulum" : "string",
-         "homebase": {
-             "idh": "string",
-             "nama": "string",
-             "tgl_update": "datetime",
-             "l": "integer",
-             "p": "integer",
-             "jlh": "integer"
+         "prodi" : {
+               "id" : "string",
+               "idf" : "string",
+               "nama_prodi" : "string",
+               "akreditasi" : "string",
+               "fakultas" : {
+                   "id" : "string",
+                   "nama_fakultas" : "string",
+                   "akreditasi" : "string"
+               }
          }
     }
 }
@@ -47,8 +49,8 @@ Request :
     - Accept: application/json
 - Query Param :
     - idh : string
-    - kurikulum : string
     - semester : string
+    - page : integer
 - Response :
 
 ```json 
@@ -58,37 +60,101 @@ Request :
     "message" : "string",
     "data" : [
         {
-             "id" : "string,unique",
+             "id" : "integer",
              "idh" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
              "semester" : "string",
-             "kurikulum" : "string",
-             "homebase": {
-                 "idh": "string",
-                 "nama": "string",
-                 "tgl_update": "datetime",
-                 "l": "integer",
-                 "p": "integer",
-                 "jlh": "integer"
+             "prodi" : {
+                  "id" : "string",
+                  "idf" : "string",
+                  "nama_prodi" : "string",
+                  "akreditasi" : "string",
+                  "fakultas" : {
+                      "id" : "string",
+                      "nama_fakultas" : "string",
+                      "akreditasi" : "string"
+                  }
              }
         },
         {
-             "id" : "string,unique",
+             "id" : "integer",
              "idh" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
              "semester" : "string",
-             "kurikulum" : "string",
-             "homebase": {
-                 "idh": "string",
-                 "nama": "string",
-                 "tgl_update": "datetime",
-                 "l": "integer",
-                 "p": "integer",
-                 "jlh": "integer"
+             "prodi" : {
+                  "id" : "string",
+                  "idf" : "string",
+                  "nama_prodi" : "string",
+                  "akreditasi" : "string",
+                  "fakultas" : {
+                      "id" : "string",
+                      "nama_fakultas" : "string",
+                      "akreditasi" : "string"
+                  }
+             }
+        }
+    ]
+}
+```
+
+## Get Authenticated User Matakuliah
+Request :
+- Method : GET
+- Endpoint : `/api/user/{username}/matakuliah`
+- Header :
+    - Accept: application/json
+- Query Param :
+    - idh : string
+    - semester : string
+    - page : integer
+- Response :
+
+```json 
+{
+    "code" : "integer",
+    "status" : "string",
+    "message" : "string",
+    "data" : [
+        {
+             "id" : "integer",
+             "idh" : "string",
+             "kode" : "string,unique",
+             "nama" : "string",
+             "sks" : "integer",
+             "semester" : "string",
+             "prodi" : {
+                      "id" : "string",
+                      "idf" : "string",
+                      "nama_prodi" : "string",
+                      "akreditasi" : "string",
+                      "fakultas" : {
+                          "id" : "string",
+                          "nama_fakultas" : "string",
+                          "akreditasi" : "string"
+                      }
+             } 
+        },
+        {
+             "id" : "integer",
+             "idh" : "string",
+             "kode" : "string,unique",
+             "nama" : "string",
+             "sks" : "integer",
+             "semester" : "string",
+             "prodi" : {
+                     "id" : "string",
+                     "idf" : "string",
+                     "nama_prodi" : "string",
+                     "akreditasi" : "string",
+                     "fakultas" : {
+                         "id" : "string",
+                         "nama_fakultas" : "string",
+                         "akreditasi" : "string"
+                     }
              }
         }
     ]
