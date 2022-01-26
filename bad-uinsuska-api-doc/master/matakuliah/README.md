@@ -21,7 +21,7 @@ Request :
     "message" : "string",
     "data" : {
          "id" : "integer",
-         "idh" : "string",
+         "idp" : "string",
          "kode" : "string,unique",
          "nama" : "string",
          "sks" : "integer",
@@ -48,7 +48,7 @@ Request :
 - Header :
     - Accept: application/json
 - Query Param :
-    - idh : string
+    - idp : string
     - semester : string
     - page : integer
 - Response :
@@ -61,7 +61,7 @@ Request :
     "data" : [
         {
              "id" : "integer",
-             "idh" : "string",
+             "idp" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
@@ -80,7 +80,7 @@ Request :
         },
         {
              "id" : "integer",
-             "idh" : "string",
+             "idp" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
@@ -108,7 +108,7 @@ Request :
 - Header :
     - Accept: application/json
 - Query Param :
-    - idh : string
+    - idp : string
     - semester : string
     - page : integer
 - Response :
@@ -121,7 +121,7 @@ Request :
     "data" : [
         {
              "id" : "integer",
-             "idh" : "string",
+             "idp" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
@@ -140,7 +140,7 @@ Request :
         },
         {
              "id" : "integer",
-             "idh" : "string",
+             "idp" : "string",
              "kode" : "string,unique",
              "nama" : "string",
              "sks" : "integer",
