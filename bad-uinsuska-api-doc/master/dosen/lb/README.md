@@ -21,18 +21,22 @@ Request :
     "message" : "string",
     "data" : {
          "nip" : "string",
-         "idh" : "string",
+         "idp" : "string",
+         "idj" : "string|null",
          "nama" : "string",
          "nidn_nup" : "string",
          "golongan_jabatan" : "string",
          "email" : "string",
-         "homebase" : {
-             "idh": "string",
-             "nama": "string",
-             "tgl_update": "datetime",
-             "l": "integer",
-             "p": "integer",
-             "jlh": "integer"
+         "prodi" : {
+              "id" : "string",
+              "idf" : "string",
+              "nama_prodi" : "string",
+              "akreditasi" : "string",
+              "fakultas" : {
+                  "id" : "string",
+                  "nama_fakultas" : "string",
+                  "akreditasi" : "string"
+              } 
          }
     }
 }
@@ -45,7 +49,8 @@ Request :
 - Header :
     - Accept: application/json
 - Query Param :
-    - idh : string
+    - idp : string
+    - nama : string
 - Response :
 
 ```json 
@@ -56,34 +61,98 @@ Request :
     "data" : [
         {
              "nip" : "string",
-             "idh" : "string",
+             "idp" : "string",
              "nama" : "string",
              "nidn_nup" : "string",
              "golongan_jabatan" : "string",
              "email" : "string",
-             "homebase" : {
-                 "idh": "string",
-                 "nama": "string",
-                 "tgl_update": "datetime",
-                 "l": "integer",
-                 "p": "integer",
-                 "jlh": "integer"
+             "prodi" : {
+                   "id" : "string",
+                   "idf" : "string",
+                   "nama_prodi" : "string",
+                   "akreditasi" : "string",
+                   "fakultas" : {
+                       "id" : "string",
+                       "nama_fakultas" : "string",
+                       "akreditasi" : "string"
+                   }
              }
         },
         {
              "nip" : "string",
-             "idh" : "string",
+             "idp" : "string",
              "nama" : "string",
              "nidn_nup" : "string",
              "golongan_jabatan" : "string",
              "email" : "string",
-             "homebase" : {
-                 "idh": "string",
-                 "nama": "string",
-                 "tgl_update": "datetime",
-                 "l": "integer",
-                 "p": "integer",
-                 "jlh": "integer"
+             "prodi" : {
+                   "id" : "string",
+                   "idf" : "string",
+                   "nama_prodi" : "string",
+                   "akreditasi" : "string",
+                   "fakultas" : {
+                       "id" : "string",
+                       "nama_fakultas" : "string",
+                       "akreditasi" : "string"
+                   }
+             }
+        }
+    ]
+}
+```
+
+## List Authenticated User Dosen LB
+Request :
+- Method : GET
+- Endpoint : `/api/user/{username}/dosen/lb`
+- Header :
+    - Accept: application/json
+- Query Param :
+    - nama : string
+- Response :
+
+```json 
+{
+    "code" : "integer",
+    "status" : "string",
+    "message" : "string",
+    "data" : [
+        {
+             "nip" : "string",
+             "idp" : "string",
+             "nama" : "string",
+             "nidn_nup" : "string",
+             "golongan_jabatan" : "string",
+             "email" : "string",
+             "prodi" : {
+                   "id" : "string",
+                   "idf" : "string",
+                   "nama_prodi" : "string",
+                   "akreditasi" : "string",
+                   "fakultas" : {
+                       "id" : "string",
+                       "nama_fakultas" : "string",
+                       "akreditasi" : "string"
+                   }
+             }
+        },
+        {
+             "nip" : "string",
+             "idp" : "string",
+             "nama" : "string",
+             "nidn_nup" : "string",
+             "golongan_jabatan" : "string",
+             "email" : "string",
+             "prodi" : {
+                   "id" : "string",
+                   "idf" : "string",
+                   "nama_prodi" : "string",
+                   "akreditasi" : "string",
+                   "fakultas" : {
+                       "id" : "string",
+                       "nama_fakultas" : "string",
+                       "akreditasi" : "string"
+                   }
              }
         }
     ]
