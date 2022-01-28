@@ -9,7 +9,7 @@ No authentication needed to use this API
 ## Get Dosen
 Request :
 - Method : GET
-- Endpoint : `/api/dosen/{nip}`
+- Endpoint : `/api/dosen/tetap/{nip}`
 - Header :
     - Accept: application/json
 - Response :
@@ -45,7 +45,7 @@ Request :
 ## List Dosen
 Request :
 - Method : GET
-- Endpoint : `/api/dosen`
+- Endpoint : `/api/dosen/tetap`
 - Header :
     - Accept: application/json
 - Query Param :
@@ -104,7 +104,7 @@ Request :
 ## Get Authenticated User Dosen
 Request :
 - Method : GET
-- Endpoint : `/api/user/{username}/dosen`
+- Endpoint : `/api/user/{username}/dosen/tetap`
 - Header :
     - Accept: application/json
 - Query Param :
