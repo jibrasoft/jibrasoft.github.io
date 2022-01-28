@@ -11,11 +11,11 @@ Spesifikasi API Sistem Informasi Beban Akademik Dosen Terintegrasi UIN SUSKA RIA
     - [Fakultas](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/fakultas)
     - [Prodi](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/prodi)
     - [Ruangan](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/ruangan)
-    - [Homebase](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/homebase)
     - [Dosen](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/dosen)
     - [Dosen LB](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/dosen/lb)
     - [Matakuliah](https://jibrasoft.github.io/bad-uinsuska-api-doc/master/matakuliah)
  - Pemaketan
+    - [Pemaketan]()
  - Penjadwalan
 
 ## Framework
